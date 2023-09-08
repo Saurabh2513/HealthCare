@@ -161,7 +161,7 @@ class MainActivity : AppCompatActivity() {
         VolleySingleton.volleyRequestQueue!!.add(volleyJsonObjectRequest)
     }
 
-    private fun callNetworkConnection() {
+    private fun callNetworkConnection() { 
         var checkNetworkConnection = CheckNetworkConnection(application)
         checkNetworkConnection.observe(this) { isConnected ->
             if (isConnected) {
