@@ -1,0 +1,54 @@
+1. Get Input First Name, Middle Name & Last Name from user and store it in on variable called fullName. Show the full name to user.
+2. Input string from user and find its length
+3. Write a program to get string from user and reverse it and print it.
+4. Get String input from user and find the occurence of character;
+
+    /*
+
+    Please enter your string : I am learning a java programming
+    Please enter the character to find occurence : a
+
+    6 occurence fond of character a
+
+    */
+
+5. Check if string is palindrome or not.
+    /*
+
+    Please enter your string : java
+    The java is not palindrome
+    -------------------------------
+
+    Please enter your string : abcba
+    The abcba is palindrome
+    */
+
+6. Take two strings from user and check if they are similar or not.
+7. Get string from user and show the character count of that string.
+
+    /*
+
+    Please enter your string : I am learning a java
+    character count is : 20
+
+    */
+
+8. Get string from user and show the space count of that string.
+
+    /*
+
+    Please enter your string : I am learning a java
+    space count is : 4
+
+    */
+
+9. Get string from user and show the space, word & number count of that string.
+
+    /*
+
+    Please enter your string : I am learning a java 1234
+    space count is : 5
+    word count is : 5
+    number coubt is : 4
+
+    */

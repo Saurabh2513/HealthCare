@@ -1,0 +1,70 @@
+1. Take 2 numbers from user and check which one is greater
+2. Take 3 numbers from user and check which one is greater
+3. Print smallest number among three.
+4. Take input number from user and check if it is divisible by 5 or not.
+5. Take input number from user and check if it is divisible by 5 and 7 or not.
+6. Take input number from user and check if it is divisible by 5 or 7 or both.
+7. Calculator
+
+/*
+    Please input num1: 10
+    Please input num2: 20
+
+    Please select operation:
+    1.Addition
+    2.Subtraction
+    3.Division
+    4.Multiplication
+
+    1
+    (10 + 20) = 10
+*/
+
+
+8. Print days of week (use if-else or switch)
+/*
+    1
+    Sunday
+    -------------------
+    6
+    Friday
+*/
+
+9. Print month of year (use if-else or switch)
+
+/*
+    1
+    January
+    -------------------
+    6
+    June
+*/
+
+10. Create program to determine Student is Pass or Fail.
+ Take marks of 5 subjects.
+ English, Marathi, Hindi, Maths, Geo.
+ Check if Student has failed in any subject. if student is failed in any subject then show the subject name and marks.
+ If student is pass then show the percentage.
+
+ /*
+    Please Enter marks in below subjects:
+    English : 40
+    Marathi : 30
+    Hindi : 56
+    Maths : 88
+    Geo : 85
+
+    Student is fail in Marathi he has 30 marks.
+
+    --------------------------------------------
+
+    Please Enter marks in below subjects:
+        English : 50
+        Marathi : 65
+        Hindi : 56
+        Maths : 88
+        Geo : 96
+
+        Student is pass he has 71%.
+
+ */

@@ -1,0 +1,7 @@
+1. Write a class named Student with variables: rollno, name, age, address. take this values from the user and store it into Student class
+& show it to user.
+
+2. Use same Student class and take all values from user for 3 students.
+show who is the oldest student and who is the yonger student.
+
+3.

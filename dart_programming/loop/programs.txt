@@ -1,0 +1,16 @@
+1. Print numbers between 1 - 100
+2. Print Even Numbers between 1 - 100
+3. Print Odd Numbers between 1 - 100
+4. Input number from user and print the multiplication table of that number
+5. Print factorial of given number
+6. Print leap years from 2000 - 3000
+7. Print all number divisible by 7 between 1-300
+8. Reverse given number
+9. Check is number palindrome or not.
+/*
+    12321 is palindrome
+    1222 is not palindrome
+    212 is palindrome
+    213 is not palindrome
+*/
+10. Write program to print Fibonacci series
