@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="purple">#8a00e6</color>
+    <color name="topBarColor">#8a00e6</color>
+    <color name="back">#F5EBFF</color>
+    <color name="cadmium_violet">#8547A9</color>
+    <color name="skyBlue">#4E84DA</color>
+
+</resources>

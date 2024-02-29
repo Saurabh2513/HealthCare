@@ -11,13 +11,11 @@ If student is pass then show the percentage.
 import 'dart:io';
 
 void main() {
-  const int numSubjects = 5;
 
   List<String> subjects = ["English", "Marathi", "Hindi", "Maths", "Geo"];
-
   List<double> marks = [];
 
-  for (int i = 0; i < numSubjects; i++) {
+  for (int i = 0; i < 5; i++) {
     stdout.write("Enter marks for ${subjects[i]}: ");
     marks.add(double.parse(stdin.readLineSync()!));
   }
@@ -25,7 +23,7 @@ void main() {
   String failedSubject = "";
   double failedMarks = 0.0;
 
-  for (int i = 0; i < numSubjects; i++) {
+  for (int i = 0; i < 5; i++) {
     if (marks[i] < 40) {
       hasFailed = true;
       failedSubject = subjects[i];
@@ -38,8 +36,7 @@ void main() {
     print("Student has failed in $failedSubject with marks: $failedMarks");
   } else {
     double totalMarks = marks.reduce((a, b) => a + b);
-    double percentage = (totalMarks / (numSubjects * 100)) * 100;
-
+    double percentage = (totalMarks / (5 * 100)) * 100;
     print("Student has passed with a percentage of $percentage%");
   }
 }

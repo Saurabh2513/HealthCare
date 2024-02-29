@@ -1,0 +1,966 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#F8E9FC"
+        tools:context="com.example.onboarding.fragment.HomeFragment"
+        >
+
+        <ScrollView
+            android:id="@+id/scrollView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintHorizontal_bias="0.0"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.0">
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <ViewFlipper
+                    android:layout_width="match_parent"
+                    android:layout_height="150dp"
+                    android:layout_marginStart="5dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="5dp"
+                    android:autoStart="true"
+                    android:flipInterval="3000"
+                    android:inAnimation="@android:anim/slide_in_left"
+                    android:outAnimation="@android:anim/slide_out_right"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintHorizontal_bias="0.5">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img3" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img2" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img3" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img4" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img5" />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/img6" />
+                </ViewFlipper>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="130dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/transfer_money_constraint"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/tv_transfer_money"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Transfer Money"
+                            android:textColor="@color/black"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img_to_mobile"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="@drawable/round_outline"
+                            android:clipToOutline="true"
+                            android:src="@drawable/person"
+                            app:layout_constraintEnd_toStartOf="@id/img_to_mobile1"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/tv_transfer_money" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img_to_mobile1"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="@drawable/round_outline"
+                            android:clipToOutline="true"
+                            android:src="@drawable/tobank"
+                            app:circularflow_radiusInDP="10dp"
+                            app:layout_constraintEnd_toStartOf="@id/img_to_mobile2"
+                            app:layout_constraintStart_toEndOf="@id/img_to_mobile"
+                            app:layout_constraintTop_toBottomOf="@id/tv_transfer_money" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img_to_mobile2"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="@drawable/round_outline"
+                            android:clipToOutline="true"
+                            android:src="@drawable/selfaccount"
+                            app:layout_constraintEnd_toStartOf="@id/img_to_mobile3"
+                            app:layout_constraintStart_toEndOf="@id/img_to_mobile1"
+                            app:layout_constraintTop_toBottomOf="@id/tv_transfer_money" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/img_to_mobile3"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="@drawable/round_outline"
+                            android:clipToOutline="true"
+                            android:src="@drawable/tobank"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/img_to_mobile2"
+                            app:layout_constraintTop_toBottomOf="@id/tv_transfer_money" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/t1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="5dp"
+                            android:gravity="center"
+                            android:text="@string/to_mobile_number"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintEnd_toStartOf="@id/t2"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/img_to_mobile" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/t2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="5dp"
+                            android:gravity="center"
+                            android:text="To Bank / UPI ID"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintEnd_toStartOf="@id/t3"
+                            app:layout_constraintStart_toEndOf="@id/t1"
+                            app:layout_constraintTop_toBottomOf="@id/img_to_mobile" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/t3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="5dp"
+                            android:gravity="center"
+                            android:text="To Self Account"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintEnd_toStartOf="@id/t4"
+                            app:layout_constraintStart_toEndOf="@id/t2"
+                            app:layout_constraintTop_toBottomOf="@id/img_to_mobile" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/t4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="5dp"
+                            android:gravity="center"
+                            android:text="Check Balance"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/t3"
+                            app:layout_constraintTop_toBottomOf="@id/img_to_mobile" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:id="@+id/cardView2"
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="10dp"
+                        android:layout_marginTop="10dp"
+                        android:text="Receive Money"
+                        android:textColor="@color/black"
+                        android:textSize="10dp"
+                        android:textStyle="bold" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="18dp"
+                        android:layout_marginTop="30dp"
+                        android:src="@drawable/qr_code" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="30dp"
+                        android:layout_marginTop="30dp"
+                        android:text="UPI ID: 205834745SY"
+                        android:textSize="13dp" />
+
+                    <ImageView
+                        android:layout_width="40dp"
+                        android:layout_height="18dp"
+                        android:layout_gravity="right"
+                        android:layout_marginTop="20dp"
+                        android:src="@drawable/baseline_arrow_forward_ios_24" />
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="80dp"
+                    android:orientation="horizontal"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toBottomOf="@+id/cardView2">
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/row1"
+                        android:layout_width="120dp"
+                        android:layout_height="68dp"
+                        android:layout_gravity="center"
+                        android:layout_marginStart="5dp"
+                        android:backgroundTint="@color/skyBlue"
+                        app:cardCornerRadius="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/row2"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/wallet_img"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginVertical="20dp"
+                                android:src="@drawable/wallet"
+                                app:layout_constraintBottom_toTopOf="@id/wallet"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/wallet"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginVertical="5dp"
+                                android:gravity="center"
+                                android:text="PhonePe Wallet"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_10sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/row2"
+                        android:layout_width="120dp"
+                        android:layout_height="68dp"
+                        android:layout_gravity="center"
+                        android:backgroundTint="@color/skyBlue"
+                        app:cardCornerRadius="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@id/row3"
+                        app:layout_constraintStart_toEndOf="@id/row1"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/reward_img"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginVertical="20dp"
+                                android:src="@drawable/reward"
+                                app:layout_constraintBottom_toTopOf="@id/reward"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/reward"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginVertical="5dp"
+                                android:gravity="center"
+                                android:text="Rewards"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_10sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+
+                    <androidx.cardview.widget.CardView
+                        android:id="@+id/row3"
+                        android:layout_width="120dp"
+                        android:layout_height="68dp"
+                        android:layout_gravity="center"
+                        android:layout_marginEnd="5dp"
+                        android:backgroundTint="@color/skyBlue"
+                        app:cardCornerRadius="10dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@id/row2"
+                        app:layout_constraintTop_toTopOf="parent">
+
+                        <androidx.constraintlayout.widget.ConstraintLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent">
+
+                            <androidx.appcompat.widget.AppCompatImageView
+                                android:id="@+id/refer_img"
+                                android:layout_width="30dp"
+                                android:layout_height="30dp"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginVertical="20dp"
+                                android:src="@drawable/speaker"
+                                app:layout_constraintBottom_toTopOf="@id/refer"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent"
+                                app:layout_constraintTop_toTopOf="parent" />
+
+                            <androidx.appcompat.widget.AppCompatTextView
+                                android:id="@+id/refer"
+                                android:layout_width="0dp"
+                                android:layout_height="wrap_content"
+                                android:layout_marginHorizontal="20dp"
+                                android:layout_marginVertical="5dp"
+                                android:gravity="center"
+                                android:text="Refer / Get $50"
+                                android:textColor="@color/white"
+                                android:textSize="@dimen/_10sp"
+                                app:layout_constraintBottom_toBottomOf="parent"
+                                app:layout_constraintEnd_toEndOf="parent"
+                                app:layout_constraintStart_toStartOf="parent" />
+                        </androidx.constraintlayout.widget.ConstraintLayout>
+
+                    </androidx.cardview.widget.CardView>
+                </androidx.constraintlayout.widget.ConstraintLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="110dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/app_by_PhonePe"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <TextView
+                            android:id="@+id/apps"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Apps by PhonePe"
+                            android:textColor="@color/black"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/stock"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:src="@drawable/sharemarket"
+                            android:background="@drawable/round_outline"
+                            android:clipToOutline="true"
+                            app:layout_constraintEnd_toStartOf="@id/business"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/apps" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/business"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="@drawable/round_outline"
+                            android:clipToOutline="true"
+                            android:src="@drawable/businessg"
+                            app:layout_constraintEnd_toStartOf="@id/pincode"
+                            app:layout_constraintStart_toEndOf="@id/stock"
+                            app:layout_constraintTop_toBottomOf="@id/apps" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/pincode"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:background="@drawable/round_outline"
+                            android:clipToOutline="true"
+                            android:layout_marginVertical="20dp"
+                            android:src="@drawable/pincodei"
+                            app:layout_constraintEnd_toStartOf="@id/indus_appstore"
+                            app:layout_constraintStart_toEndOf="@id/business"
+                            app:layout_constraintTop_toBottomOf="@id/apps" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/indus_appstore"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:src="@drawable/indusapp"
+                            android:background="@drawable/round_outline"
+                            android:clipToOutline="true"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/pincode"
+                            app:layout_constraintTop_toBottomOf="@id/apps" />
+
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/text1"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:text="Stocks and IPO"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintEnd_toEndOf="@id/stock"
+                            app:layout_constraintStart_toStartOf="@id/stock"
+                            app:layout_constraintTop_toBottomOf="@id/stock" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/text2"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Business"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintEnd_toEndOf="@id/business"
+                            app:layout_constraintStart_toStartOf="@id/business"
+                            app:layout_constraintTop_toBottomOf="@id/business" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/text3"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center"
+                            android:text="Pincode"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintEnd_toEndOf="@id/pincode"
+                            app:layout_constraintStart_toStartOf="@id/pincode"
+                            app:layout_constraintTop_toBottomOf="@id/pincode" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/text4"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:gravity="center"
+                            android:text="Indus Appstore"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintEnd_toEndOf="@id/indus_appstore"
+                            app:layout_constraintStart_toStartOf="@id/indus_appstore"
+                            app:layout_constraintTop_toBottomOf="@id/indus_appstore" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="5dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+
+                        <TextView
+                            android:id="@+id/recharge"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Recharge And Pay Bill"
+                            android:textColor="@color/black"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+
+                            android:id="@+id/mobile_recharge_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:src="@drawable/mobilerecharge"
+                            app:layout_constraintBottom_toTopOf="@id/rent_payment_img"
+                            app:layout_constraintEnd_toStartOf="@id/buy_fastag_img"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/rechargeText"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="Stocks and IPO"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintEnd_toStartOf="@id/fastag_text"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/mobile_recharge_img" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/buy_fastag_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:src="@drawable/baseline_contacts_24"
+                            app:layout_constraintBottom_toTopOf="@id/loan_repayment_img"
+                            app:layout_constraintEnd_toStartOf="@id/dth_img"
+                            app:layout_constraintStart_toEndOf="@id/mobile_recharge_img"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/fastag_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="Buy FASTag"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintEnd_toStartOf="@id/dth_text"
+                            app:layout_constraintStart_toEndOf="@id/rechargeText"
+                            app:layout_constraintTop_toBottomOf="@id/buy_fastag_img" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/dth_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:src="@drawable/baseline_contacts_24"
+                            app:layout_constraintBottom_toTopOf="@id/book_cylender_img"
+                            app:layout_constraintEnd_toStartOf="@id/electricity_img"
+                            app:layout_constraintStart_toEndOf="@id/buy_fastag_img"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/dth_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="Stocks and IPO"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintEnd_toStartOf="@id/electricity_text"
+                            app:layout_constraintStart_toEndOf="@id/fastag_text"
+                            app:layout_constraintTop_toBottomOf="@id/dth_img" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/electricity_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:src="@drawable/baseline_contacts_24"
+                            app:layout_constraintBottom_toTopOf="@id/see_all"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/dth_img"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/electricity_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="Stocks and IPO"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/dth_text"
+                            app:layout_constraintTop_toBottomOf="@id/electricity_img" />
+
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/rent_payment_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:src="@drawable/baseline_contacts_24"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/loan_repayment_img"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/mobile_recharge_img" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/rent_payment_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:text="Rent Payment"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@id/rent_payment_img"
+                            app:layout_constraintStart_toStartOf="@id/rent_payment_img" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/loan_repayment_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:src="@drawable/baseline_contacts_24"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/book_cylender_img"
+                            app:layout_constraintStart_toEndOf="@id/rent_payment_img"
+                            app:layout_constraintTop_toBottomOf="@id/buy_fastag_img" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/loan_repayment_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:text="Rent Payment"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@id/loan_repayment_img"
+                            app:layout_constraintStart_toStartOf="@id/loan_repayment_img" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/book_cylender_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:src="@drawable/baseline_contacts_24"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/see_all"
+                            app:layout_constraintStart_toEndOf="@id/loan_repayment_img"
+                            app:layout_constraintTop_toBottomOf="@id/dth_img" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/book_cylender_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:text="Book A Cylinder"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@id/book_cylender_img"
+                            app:layout_constraintStart_toStartOf="@id/book_cylender_img" />
+
+                        <Button
+                            android:id="@+id/see_all"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="@drawable/btn_border"
+                            app:icon="@drawable/baseline_arrow_forward_ios_24"
+                            app:iconGravity="start"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/book_cylender_img"
+                            app:layout_constraintTop_toBottomOf="@id/electricity_img" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/see_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:text="See All"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@id/see_all"
+                            app:layout_constraintStart_toStartOf="@id/see_all" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="60dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <ImageView
+                            android:id="@+id/imgl"
+                            android:layout_width="40dp"
+                            android:layout_height="20dp"
+                            android:layout_marginStart="5dp"
+                            android:src="@drawable/qr_code"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <TextView
+                            android:id="@+id/less_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_gravity="center_vertical"
+                            android:layout_marginStart="50dp"
+                            android:text="PIN-less Payment"
+                            android:textColor="@color/black"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@+id/imgl"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+
+                        <Button
+                            android:layout_width="110dp"
+                            android:layout_height="40dp"
+                            android:layout_marginEnd="20dp"
+                            android:text="TRY NOW"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginEnd="10dp"
+                    android:layout_marginBottom="100dp"
+                    app:cardCornerRadius="5dp"
+                    app:layout_constraintEnd_toEndOf="parent"
+                    app:layout_constraintStart_toStartOf="parent"
+                    app:layout_constraintTop_toTopOf="parent">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:id="@+id/sponsored_links"
+                        android:layout_width="match_parent"
+                        android:layout_height="120dp"
+
+                        >
+
+                        <TextView
+                            android:id="@+id/sponsored"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Sponsored Links"
+                            android:textColor="@color/black"
+                            android:textSize="15dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/junglee_rummy"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/baseline_contacts_24"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@+id/rummy_circle"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/sponsored" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/rummy_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:text="Junglee Rummy"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@id/junglee_rummy"
+                            app:layout_constraintStart_toStartOf="@id/junglee_rummy" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/rummy_circle"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/baseline_contacts_24"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/one_card"
+                            app:layout_constraintStart_toEndOf="@id/junglee_rummy"
+                            app:layout_constraintTop_toBottomOf="@id/sponsored" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/rummy_circle_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:text="Rummy Circle"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@id/rummy_circle"
+                            app:layout_constraintStart_toStartOf="@id/rummy_circle" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/one_card"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/baseline_contacts_24"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toStartOf="@id/buddy_loan"
+                            app:layout_constraintStart_toEndOf="@id/rummy_circle"
+                            app:layout_constraintTop_toBottomOf="@id/sponsored" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/one_card_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:text="One Card"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@id/one_card"
+                            app:layout_constraintStart_toStartOf="@id/one_card" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/buddy_loan"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:src="@drawable/baseline_contacts_24"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/one_card"
+                            app:layout_constraintTop_toBottomOf="@id/sponsored" />
+
+                        <androidx.appcompat.widget.AppCompatTextView
+                            android:id="@+id/buddy_loan_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginBottom="5dp"
+                            android:gravity="center"
+                            android:text="One Card"
+                            android:textSize="@dimen/_10sp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@id/buddy_loan"
+                            app:layout_constraintStart_toStartOf="@id/buddy_loan" />
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                </androidx.cardview.widget.CardView>
+
+
+            </LinearLayout>
+        </ScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/qrScannerBtn"
+            android:layout_width="115dp"
+            android:layout_height="48dp"
+            android:layout_gravity="center"
+            android:layout_marginBottom="35dp"
+            android:background="@drawable/btn_border"
+            android:text="Scan QR"
+            android:textSize="10dp"
+            android:textStyle="bold"
+            app:icon="@drawable/qrcode"
+            app:iconGravity="start"
+            app:iconPadding="5dp"
+            app:iconSize="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="RtlCompat" />
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

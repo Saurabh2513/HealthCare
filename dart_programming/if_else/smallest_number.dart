@@ -9,9 +9,9 @@ void main() {
   print("Enter Third Number");
   var c = int.parse(stdin.readLineSync()!);
 
-  if (a <= b && a <= c) {
+  if (a < b && a < c) {
     print("$a is Smallest Number");
-  } else if (b <= a && b <= c) {
+  } else if (b < a && b < c) {
     print("$b is Smallest Number");
   } else {
     print("$c is Smallest Number");

@@ -1,0 +1,17 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:background="#3F51B5"
+        android:layout_height="match_parent"
+        tools:context="com.example.onboarding.fragment.WealthFragment">
+
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>
