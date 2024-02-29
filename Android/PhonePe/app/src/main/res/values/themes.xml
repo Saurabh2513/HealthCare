@@ -1,0 +1,19 @@
+<resources>
+    <!-- Base application theme. -->
+    <style name="Base.Theme.Phonepe" parent="Theme.Material3.Light.NoActionBar">
+        <!-- Customize your light theme here. -->
+
+        <item name="colorPrimary">#5F259D</item>
+        <item name="colorPrimaryVariant">@color/cadmium_violet</item>
+        <item name="colorSecondary">@color/purple</item>
+        <item name="colorPrimaryDark">#590095</item>
+    </style>
+
+    <style name="Theme.Phonepe" parent="Base.Theme.Phonepe" />
+
+    <style name="TextAppearance.AppCompat.Widget.ActionBar.Title" parent="@style/TextAppearance.AppCompat">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">5sp</item>
+        <item name="iconSize">5dp</item>
+    </style>
+</resources>

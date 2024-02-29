@@ -1,4 +1,4 @@
-1. Get Marks of 5 students and show the percentage
+    1. Get Marks of 5 students and show the percentage
 2. Get 5 numbers from user and show the max number among them
 3. Get 5 numbers from user and show the minimum number among them
 4. Get 10 number from user and show them in accending order.

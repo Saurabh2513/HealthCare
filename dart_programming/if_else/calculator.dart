@@ -5,7 +5,7 @@ void main() {
   // var num1 = int.parse(stdin.readLineSync()!);
   double num1 = double.parse(stdin.readLineSync()!);
   print("select operator: (+,-,*,/) ");
-  String operator = stdin.readLineSync()!;
+  final operator = stdin.readLineSync()!;
   print("enter second number: ");
  // var num2 = int.parse(stdin.readLineSync()!);
   double num2 = double.parse(stdin.readLineSync()!);

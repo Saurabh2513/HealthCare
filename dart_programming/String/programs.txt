@@ -19,7 +19,7 @@
     The java is not palindrome
     -------------------------------
 
-    Please enter your string : abcba
+    Please enter your string : abcda
     The abcba is palindrome
     */
 
@@ -49,6 +49,6 @@
     Please enter your string : I am learning a java 1234
     space count is : 5
     word count is : 5
-    number coubt is : 4
+        number coubt is : 4
 
     */

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:id="@+id/chat"
+        android:title="Chat"
+        android:icon="@drawable/baseline_chat_24" />
+    <item android:id="@+id/speak"
+        android:title="Speak"
+        android:icon="@drawable/baseline_mic_none_24" />
+    <item android:id="@+id/setting"
+        android:title="Setting"
+        android:icon="@drawable/baseline_build_circle_24" />
+</menu>

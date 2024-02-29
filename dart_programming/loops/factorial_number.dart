@@ -1,7 +1,7 @@
 import 'dart:io';
 
 void main() {
-  print("Enter a number:");
+  print("Enter a Number:");
   String input = stdin.readLineSync()!;
   int number = int.parse(input);
   int factorial = 1;
@@ -11,3 +11,4 @@ void main() {
   }
   print("Factorial of $number is: $factorial");
 }
+

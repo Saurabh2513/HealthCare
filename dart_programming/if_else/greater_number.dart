@@ -8,9 +8,9 @@ void main() {
   print('Enter y');
   var y = int.parse(stdin.readLineSync()!);
 
-  if (x > y) {
-    print('x is greater');
+  if(x > y){
+    print("the number is $x and x is greater");
   }else{
-    print('y is greater');
+    print("the number is $y and y is greater");
   }
 }

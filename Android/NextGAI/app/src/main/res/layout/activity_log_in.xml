@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/background_wallpaper"
+        tools:context=".activity.LogIn">
+
+        <LinearLayout
+            android:id="@+id/layout1"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.constraintlayout.widget.ConstraintLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <androidx.appcompat.widget.AppCompatImageView
+                        android:id="@+id/iconn"
+                        android:layout_width="@dimen/_50dp"
+                        android:layout_height="@dimen/_50dp"
+                        android:layout_marginEnd="80dp"
+                        android:src="@drawable/icon1"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <androidx.appcompat.widget.AppCompatTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="5dp"
+                        android:layout_marginTop="5dp"
+                        android:fontFamily="@font/anta_regular"
+                        android:text="NextGAI"
+                        android:textColor="@color/white"
+                        android:textSize="25dp"
+                        app:layout_constraintBottom_toBottomOf="@+id/iconn"
+                        app:layout_constraintStart_toEndOf="@id/iconn"
+                        app:layout_constraintTop_toTopOf="@id/iconn" />
+
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.constraintlayout.widget.ConstraintLayout>
+        </LinearLayout>
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="wrap_content"
+            android:id="@+id/robo4"
+            android:layout_height="250dp"
+            android:layout_marginTop="20dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:src="@drawable/robot4"
+            app:layout_constraintTop_toBottomOf="@id/layout1" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="Sign in to NextGAI"
+            android:layout_marginStart="15dp"
+            android:textColor="@color/white"
+            android:textSize="25dp"
+            android:textStyle="bold"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/robo4" />
+
+        <androidx.appcompat.widget.AppCompatTextView
+            android:id="@+id/text2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="40dp"
+            android:text="Happy to see you again..."
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="12dp"
+            android:textStyle="normal"
+            app:layout_constraintTop_toBottomOf="@id/text1" />
+
+        <androidx.appcompat.widget.AppCompatEditText
+            android:id="@+id/signtxt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/textbg"
+            android:hint="Enter Your Email"
+            android:inputType="textEmailAddress"
+            android:paddingStart="18dp"
+            android:textColor="@color/white"
+            android:textColorHint="@color/blue"
+            android:textSize="15dp"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toBottomOf="@id/text2" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/loginUpBtn"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/btn_bg"
+            android:fontFamily="@font/anta_regular"
+            android:text="Sign Up"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/signtxt"
+            android:textColor="@color/black"
+            android:textSize="20dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/google"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/btnbgblur"
+            android:fontFamily="@font/anta_regular"
+            android:text="Continue with Google"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/loginUpBtn"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="15sp"
+            android:drawableStart="@drawable/google"
+            android:drawablePadding="-80dp"
+            android:paddingStart="90dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/facebook"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/btnbgblur"
+            android:fontFamily="@font/anta_regular"
+            android:text="Continue with Google"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/google"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="15sp"
+            android:drawableStart="@drawable/facebook"
+            android:drawablePadding="-80dp"
+            android:paddingStart="90dp" />
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:id="@+id/guest"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="15dp"
+            android:layout_marginTop="20dp"
+            android:layout_marginEnd="15dp"
+            android:background="@drawable/btnbgblur"
+            android:fontFamily="@font/anta_regular"
+            android:text="Continue with Google"
+            android:textAllCaps="false"
+            app:layout_constraintTop_toBottomOf="@id/facebook"
+            android:textColor="@color/white"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            android:textSize="15sp"
+
+            />
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:layout_constraintTop_toBottomOf="@id/guest"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            android:layout_marginTop="20dp">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/txt3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:layout_marginEnd="50dp"
+                android:gravity="center"
+                android:text="Not Have Account!"
+                android:textColor="@color/white"
+                android:textSize="12dp"
+                android:textStyle="normal"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/createaccbtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="5dp"
+                android:clickable="true"
+                android:gravity="center"
+                android:text="Create Account?"
+                android:textColor="@color/blue"
+                android:textSize="15dp"
+                app:layout_constraintBottom_toBottomOf="@+id/txt3"
+                app:layout_constraintStart_toEndOf="@+id/txt3"
+                app:layout_constraintTop_toTopOf="@+id/txt3" />
+
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

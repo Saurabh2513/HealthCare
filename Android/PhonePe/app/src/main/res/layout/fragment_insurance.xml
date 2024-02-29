@@ -1,0 +1,408 @@
+<layout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools">
+
+    <data>
+
+    </data>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@color/back"
+        tools:context="com.example.onboarding.fragment.InsuranceFragment">
+
+        <ScrollView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <androidx.cardview.widget.CardView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="200dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="5dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/insure"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginTop="10dp"
+                            android:text="Insure your Vehicle"
+                            android:textColor="@color/black"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/bike_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="20dp"
+                            android:layout_marginTop="20dp"
+                            android:src="@drawable/baseline_contacts_24"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/insure" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/bike_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Bike from $541/yr"
+                            android:textSize="10dp"
+                            app:layout_constraintBottom_toBottomOf="@id/bike_img"
+                            app:layout_constraintStart_toEndOf="@id/bike_img"
+                            app:layout_constraintTop_toTopOf="@id/bike_img" />
+
+                        <com.google.android.material.imageview.ShapeableImageView
+                            android:id="@+id/car_img"
+                            android:layout_width="40dp"
+                            android:layout_height="40dp"
+                            android:layout_marginStart="40dp"
+                            android:layout_marginTop="30dp"
+                            android:src="@drawable/baseline_contacts_24"
+                            app:layout_constraintBottom_toBottomOf="@id/bike_img"
+                            app:layout_constraintStart_toEndOf="@id/bike_text"
+                            app:layout_constraintTop_toTopOf="@id/insure" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/car_text"
+                            android:layout_width="0dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+
+                            android:text="Car from $541/yr"
+                            android:textSize="10dp"
+                            app:layout_constraintBottom_toBottomOf="@id/car_img"
+                            app:layout_constraintStart_toEndOf="@id/car_img"
+                            app:layout_constraintTop_toTopOf="@id/car_img" />
+
+                        <androidx.cardview.widget.CardView
+                            android:layout_width="match_parent"
+                            android:layout_height="80dp"
+                            android:layout_marginStart="10dp"
+                            android:layout_marginEnd="10dp"
+                            android:background="@drawable/gradiant"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@id/car_img">
+
+                            <androidx.constraintlayout.widget.ConstraintLayout
+                                android:id="@+id/layout1"
+                                android:layout_width="match_parent"
+                                android:layout_height="match_parent">
+
+                                <com.google.android.material.textview.MaterialTextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_gravity="center"
+                                    android:layout_marginTop="5dp"
+                                    android:foregroundGravity="center"
+                                    android:gravity="center"
+                                    android:text="Or, provide vehicle registration number"
+                                    android:textSize="10dp"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+                                    app:layout_constraintTop_toTopOf="parent" />
+
+                                <com.google.android.material.textfield.TextInputEditText
+                                    android:layout_width="0dp"
+                                    android:layout_height="40dp"
+                                    android:layout_marginStart="30dp"
+                                    android:layout_marginEnd="30dp"
+                                    android:layout_marginBottom="15dp"
+                                    android:background="@drawable/edit_text_back"
+                                    android:gravity="center"
+                                    android:hint="Eg. KA00XX0000"
+                                    app:layout_constraintBottom_toBottomOf="parent"
+                                    app:layout_constraintEnd_toEndOf="parent"
+                                    app:layout_constraintStart_toStartOf="parent"
+
+                                    />
+
+                            </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+                        </androidx.cardview.widget.CardView>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="5dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/inshurence"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Insure self and family"
+                            android:textColor="@color/black"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/health_img"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="@drawable/round_outline"
+                            android:clipToOutline="true"
+                            android:src="@drawable/sharemarket"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/inshurence" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/health_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Health"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/health_img"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/health_text2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="from $577 / month"
+                            android:textSize="8dp"
+                            app:layout_constraintStart_toEndOf="@id/health_img"
+                            app:layout_constraintTop_toBottomOf="@id/health_text" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/life_img"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="@drawable/round_outline"
+                            android:clipToOutline="true"
+                            android:src="@drawable/sharemarket"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/health_text"
+                            app:layout_constraintTop_toBottomOf="@+id/inshurence" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/life_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="10dp"
+                            android:text="Life"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/life_img"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/life_text2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="15dp"
+                            android:layout_marginTop="5dp"
+                            android:gravity="center"
+                            android:text="from $577 / month"
+                            android:textSize="8dp"
+                            app:layout_constraintStart_toEndOf="@id/life_img"
+                            app:layout_constraintTop_toBottomOf="@id/life_text" />
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="120dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="5dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="5dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/other"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Other Insurence"
+                            android:textColor="@color/black"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/travel_insurence_img"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="@drawable/round_outline"
+                            android:clipToOutline="true"
+                            android:src="@drawable/sharemarket"
+                            app:layout_constraintEnd_toStartOf="@id/accident_img"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toBottomOf="@+id/other" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/travel_insurence_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Travel Insurence"
+                            android:textSize="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@id/travel_insurence_img"
+                            app:layout_constraintStart_toStartOf="@id/travel_insurence_img"
+                            app:layout_constraintTop_toBottomOf="@id/travel_insurence_img" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/accident_img"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="@drawable/round_outline"
+                            android:clipToOutline="true"
+                            android:src="@drawable/sharemarket"
+                            app:layout_constraintEnd_toStartOf="@id/super_img"
+                            app:layout_constraintStart_toEndOf="@id/travel_insurence_img"
+                            app:layout_constraintTop_toBottomOf="@+id/other" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/accident_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Travel Insurence"
+                            android:textSize="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@id/accident_img"
+                            app:layout_constraintStart_toStartOf="@id/accident_img"
+                            app:layout_constraintTop_toBottomOf="@id/accident_img" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/super_img"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="@drawable/round_outline"
+                            android:clipToOutline="true"
+                            android:src="@drawable/sharemarket"
+                            app:layout_constraintEnd_toStartOf="@id/shop_img"
+                            app:layout_constraintStart_toEndOf="@id/accident_img"
+                            app:layout_constraintTop_toBottomOf="@+id/other" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/super_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Super TOP-UP"
+                            android:textSize="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@id/super_img"
+                            app:layout_constraintStart_toStartOf="@id/super_img"
+                            app:layout_constraintTop_toBottomOf="@id/super_img" />
+
+                        <androidx.appcompat.widget.AppCompatImageView
+                            android:id="@+id/shop_img"
+                            android:layout_width="50dp"
+                            android:layout_height="50dp"
+                            android:layout_marginHorizontal="20dp"
+                            android:layout_marginVertical="20dp"
+                            android:background="@drawable/round_outline"
+                            android:clipToOutline="true"
+                            android:src="@drawable/sharemarket"
+                            app:layout_constraintEnd_toEndOf="parent"
+                            app:layout_constraintStart_toEndOf="@id/super_img"
+                            app:layout_constraintTop_toBottomOf="@+id/other" />
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:id="@+id/shop_text"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:text="Shop"
+                            android:textSize="8dp"
+                            app:layout_constraintBottom_toBottomOf="parent"
+                            app:layout_constraintEnd_toEndOf="@id/shop_img"
+                            app:layout_constraintStart_toStartOf="@id/shop_img"
+                            app:layout_constraintTop_toBottomOf="@id/shop_img" />
+
+
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="250dp"
+                    android:layout_marginStart="10dp"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginEnd="10dp"
+                    app:cardCornerRadius="5dp">
+
+                    <androidx.constraintlayout.widget.ConstraintLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent">
+
+                        <com.google.android.material.textview.MaterialTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="5dp"
+                            android:layout_marginTop="5dp"
+                            android:text="Know More About insurence"
+                            android:textColor="@color/black"
+                            android:textSize="10dp"
+                            android:textStyle="bold"
+                            app:layout_constraintStart_toStartOf="parent"
+                            app:layout_constraintTop_toTopOf="parent" />
+
+                       <androidx.constraintlayout.widget.ConstraintLayout
+                           android:layout_width="match_parent"
+                           android:layout_height="match_parent"
+                           android:layout_marginTop="20dp"
+                           android:layout_marginBottom="20dp"
+                           >
+
+                       </androidx.constraintlayout.widget.ConstraintLayout>
+                    </androidx.constraintlayout.widget.ConstraintLayout>
+
+                </androidx.cardview.widget.CardView>
+            </LinearLayout>
+        </ScrollView>
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</layout>

@@ -1,0 +1,120 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.productdetail.Prescription">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:layout_margin="25dp"
+        app:cardCornerRadius="16dp"
+        app:cardElevation="20dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="220dp"
+                android:text="Upload"
+                android:textSize="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatTextView
+                android:id="@+id/text22"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="45dp"
+                android:layout_marginEnd="30dp"
+                android:text="Please upload a valid prescription given by your Doctor"
+                android:textSize="10dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/cameraImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_wel"
+                android:src="@drawable/outline_photo_camera_24"
+                android:clickable="true"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/GalleryImg"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/text22"
+                android:focusable="true" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/cameraImg"
+                app:layout_constraintEnd_toEndOf="@id/cameraImg"
+                app:layout_constraintStart_toStartOf="@id/cameraImg"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Camera"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/GalleryImg"
+                android:layout_width="50dp"
+                android:layout_marginBottom="20dp"
+                android:layout_height="50dp"
+                android:background="@drawable/btn_wel"
+                android:clickable="true"
+                android:src="@drawable/gallery"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toStartOf="@id/pdfImg"
+                app:layout_constraintStart_toEndOf="@id/cameraImg"
+                app:layout_constraintTop_toBottomOf="@id/text22"
+                android:focusable="true" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/GalleryImg"
+                app:layout_constraintEnd_toEndOf="@id/GalleryImg"
+                app:layout_constraintStart_toStartOf="@id/GalleryImg"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="Gallery"
+                android:layout_height="wrap_content"/>
+
+            <androidx.appcompat.widget.AppCompatImageView
+                android:id="@+id/pdfImg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:clickable="true"
+                android:background="@drawable/btn_wel"
+                android:src="@drawable/outline_picture_as_pdf_24"
+                app:layout_constraintBottom_toBottomOf="parent"
+                android:layout_marginBottom="20dp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toEndOf="@id/GalleryImg"
+                app:layout_constraintTop_toBottomOf="@id/text22"
+                android:focusable="true" />
+            <androidx.appcompat.widget.AppCompatTextView
+                android:layout_width="wrap_content"
+                app:layout_constraintTop_toBottomOf="@id/pdfImg"
+                app:layout_constraintEnd_toEndOf="@id/pdfImg"
+                app:layout_constraintStart_toStartOf="@id/pdfImg"
+                android:textSize="18dp"
+                android:textColor="@color/black"
+                android:textStyle="bold"
+                android:text="PDF"
+                android:layout_height="wrap_content"/>
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </androidx.cardview.widget.CardView>
+</androidx.constraintlayout.widget.ConstraintLayout>
