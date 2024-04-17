@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/backaccount"
+    tools:context=".view.ui.activity.Registration">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/card_view"
+        android:layout_width="350dp"
+        android:layout_height="500dp"
+        android:outlineSpotShadowColor="@color/black"
+        app:cardCornerRadius="10dp"
+        app:cardElevation="50dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.491"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        >
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="5dp"
+            android:drawableBottom="@drawable/baseline_login_24"
+            android:fontFamily="@font/headland_one"
+            android:gravity="center"
+            android:text="Register Health Care!"
+            android:textColor="@color/black"
+            android:textSize="15dp"
+            android:textStyle="bold" />
+
+        <EditText
+            android:id="@+id/emailEt"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="80dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/btn_bg"
+            android:drawableLeft="@drawable/baseline_account_circle_24"
+            android:drawablePadding="13dp"
+            android:hint="Email"
+            android:paddingStart="10dp"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/pass"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="145dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/btn_bg"
+            android:drawableLeft="@drawable/baseline_email_24"
+            android:drawablePadding="13dp"
+            android:hint="Create Password"
+            android:paddingStart="10dp"
+            android:textSize="15dp" />
+
+        <EditText
+            android:id="@+id/confirmPassword"
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="210dp"
+            android:layout_marginEnd="20dp"
+            android:background="@drawable/btn_bg"
+            android:drawableLeft="@drawable/baseline_password_24"
+            android:drawablePadding="13dp"
+            android:hint="Conferm Password"
+            android:inputType="textPassword"
+            android:paddingStart="10dp"
+            android:textSize="15dp" />
+
+        <CheckBox
+            android:id="@+id/termCondition"
+            android:layout_width="300dp"
+            android:layout_height="40dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="268dp"
+            android:background="@drawable/btn_bg"
+            android:text="By clicking on that are you or terms and condition"
+            android:textColor="@color/black"
+            android:textSize="10dp" />
+
+
+        <Button
+            android:id="@+id/saveData"
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="320dp"
+            android:layout_marginEnd="20dp"
+            android:text="Register"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/signUp"
+            android:layout_width="match_parent"
+            android:layout_height="40dp"
+            android:layout_marginStart="40dp"
+            android:layout_marginTop="390dp"
+            android:layout_marginEnd="40dp"
+            android:background="@drawable/btn_bg"
+            android:gravity="center"
+            android:text="sign up!"
+            android:textAllCaps="false"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/skip"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="440dp"
+            android:gravity="center"
+            android:text="Skip Create Account!"
+            android:textColor="#2196F3"
+            android:textSize="15sp"
+            android:textStyle="bold" />
+    </androidx.cardview.widget.CardView>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,457 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#C7ECE0"
+    android:orientation="vertical"
+    tools:context=".view.ui.fragment.Account">
+
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="280dp"
+        android:layout_marginTop="40dp">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:layout_marginStart="24dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginEnd="24dp"
+            android:layout_marginBottom="26dp"
+            app:cardCornerRadius="20dp"
+            app:cardElevation="20dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <ImageView
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:src="@drawable/baseline_account_circle_24" />
+
+            <TextView
+                android:id="@+id/accountName"
+                android:layout_width="180dp"
+                android:layout_height="40dp"
+                android:layout_marginStart="100dp"
+                android:layout_marginTop="20dp"
+                android:gravity="center" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="90dp"
+                android:gravity="center"
+                android:text="Age:"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="125dp"
+                android:gravity="center"
+                android:text="Weight:"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="160dp"
+                android:gravity="center"
+                android:text="Blood:"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="90dp"
+                android:fontFamily="@font/headland_one"
+                android:gravity="center"
+                android:text="Age"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="125dp"
+                android:fontFamily="@font/headland_one"
+                android:gravity="center"
+                android:text="Weight"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="90dp"
+                android:layout_marginTop="160dp"
+                android:fontFamily="@font/headland_one"
+                android:gravity="center"
+                android:text="Blood"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="90dp"
+                android:gravity="center"
+                android:text="Sex:"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="180dp"
+                android:layout_marginTop="125dp"
+                android:gravity="center"
+                android:text="Height:"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="260dp"
+                android:layout_marginTop="90dp"
+                android:fontFamily="@font/headland_one"
+                android:gravity="center"
+                android:text="Sex"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+            <TextView
+                android:layout_width="80dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="260dp"
+                android:layout_marginTop="125dp"
+                android:fontFamily="@font/headland_one"
+                android:gravity="center"
+                android:text="Height"
+                android:textColor="@color/black"
+                android:textSize="15dp" />
+
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:background="#C7ECE0"
+            android:paddingStart="10dp"
+            android:text="OwnerView"
+            android:textColor="@color/black"
+            android:textSize="16dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#C7ECE0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="180dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/silver_bg"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="@drawable/purple_bgpurple_bg"></LinearLayout>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="45dp"
+                    android:freezesText="false"
+                    android:hapticFeedbackEnabled="false"
+                    android:hyphenationFrequency="normal"
+                    android:paddingStart="20dp"
+                    android:paddingTop="10dp"
+                    android:text="Blood
+                    Pressure"
+                    android:textColor="@color/text_color"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="100dp"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="10dp"
+                    android:text="109/70
+                          mmHg"
+                    android:textColor="@color/text_color"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="160dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/silver_bg"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="@drawable/purple_bgpurple_bg"></LinearLayout>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginStart="10dp"
+                    android:freezesText="false"
+                    android:hapticFeedbackEnabled="false"
+                    android:hyphenationFrequency="normal"
+                    android:paddingStart="10dp"
+                    android:text="Heart
+                    Rate"
+                    android:textColor="@color/text_color"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="100dp"
+                    android:gravity="center_horizontal"
+                    android:text="115 bpl"
+                    android:textColor="@color/text_color"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="180dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/silver_bg"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="@drawable/purple_bgpurple_bg"></LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:freezesText="false"
+                    android:hapticFeedbackEnabled="false"
+                    android:hyphenationFrequency="normal"
+                    android:paddingStart="10dp"
+                    android:paddingTop="10dp"
+                    android:text="Blood Pressure"
+                    android:textColor="@color/text_color"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="10dp"
+                    android:text="3512 kcal"
+                    android:textColor="@color/text_color"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/silver_bg"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="@drawable/purple_bgpurple_bg"></LinearLayout>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:freezesText="false"
+                    android:hapticFeedbackEnabled="false"
+                    android:hyphenationFrequency="normal"
+                    android:paddingStart="10dp"
+                    android:text="water Tracker"
+
+                    android:textColor="@color/text_color"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_horizontal"
+                    android:text="109/70
+                          mmHg"
+                    android:textColor="@color/text_color"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="100dp"
+            android:layout_marginTop="280dp"
+            android:orientation="horizontal"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/silver_bg"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="@drawable/purple_bgpurple_bg"></LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:freezesText="false"
+                    android:hapticFeedbackEnabled="false"
+                    android:hyphenationFrequency="normal"
+                    android:paddingStart="10dp"
+                    android:text="Blood Pressure"
+                    android:textColor="@color/text_color"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_horizontal"
+                    android:paddingStart="10dp"
+                    android:text="3512 kcal"
+                    android:textColor="@color/text_color"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="180dp"
+                android:layout_height="80dp"
+                android:layout_marginStart="15dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/silver_bg"
+                android:clickable="true"
+                android:focusable="true"
+                app:cardCornerRadius="20dp"
+                app:cardElevation="5dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:foreground="@drawable/purple_bgpurple_bg"></LinearLayout>
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:freezesText="false"
+                    android:hapticFeedbackEnabled="false"
+                    android:hyphenationFrequency="normal"
+                    android:paddingStart="10dp"
+                    android:text="water Tracker"
+                    android:textColor="@color/text_color"
+                    android:textSize="15dp"
+                    android:textStyle="bold" />
+
+                <TextView
+                    android:layout_width="100dp"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="40dp"
+                    android:gravity="center_horizontal"
+                    android:text="109/70
+                          mmHg"
+                    android:textColor="@color/text_color"
+                    android:textSize="10dp"
+                    android:textStyle="bold" />
+
+            </androidx.cardview.widget.CardView>
+
+
+        </LinearLayout>
+
+
+    </androidx.constraintlayout.widget.ConstraintLayout>
+</LinearLayout>
