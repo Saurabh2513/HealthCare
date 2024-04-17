@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
 
     android:background="#C7ECE0"
-    tools:context=".fragment.Cart">
+    tools:context=".view.ui.fragment.Cart">
 
 
     <TextView

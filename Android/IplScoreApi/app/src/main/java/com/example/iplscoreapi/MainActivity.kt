@@ -31,7 +31,7 @@ class MainActivity : AppCompatActivity() {
             val result = matchApi.getSeries(API_KEY, SERIES_ID)
 
             if (result.body() != null) {
-                Log.d("SHUBH", "onCreate: ${result.body()!!.data.matchList}")
+                Log.d("Sagar", "onCreate: ${result.body()!!.data.matchList}")
 
                 withContext(Dispatchers.Main) {
                     binding.progressbar.visibility = GONE

@@ -4,6 +4,6 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".activity.productdetail.SexualWellness">
+    tools:context=".view.ui.activity.productdetail.SexualWellness">
 
 </androidx.constraintlayout.widget.ConstraintLayout>
