@@ -21,13 +21,8 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
-
-
         val matchApi = ApiUtilities.getInstance().create(ApiInterface::class.java)
-
-
         lifecycleScope.launch(Dispatchers.IO) {
-
             val result = matchApi.getSeries(API_KEY, SERIES_ID)
 
             if (result.body() != null) {
@@ -35,7 +30,8 @@ class MainActivity : AppCompatActivity() {
 
                 withContext(Dispatchers.Main) {
                     binding.progressbar.visibility = GONE
-                    binding.recyclerView.adapter = MatchAdapter(this@MainActivity, result.body()!!.data.matchList)
+                    binding.recyclerView.adapter =
+                        MatchAdapter(this@MainActivity, result.body()!!.data.matchList)
                 }
             }
         }
