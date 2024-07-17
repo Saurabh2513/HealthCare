@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">rinzifyTest</string>
+    <string name="home">Home</string>
+    <string name="my_shedule">My Shedule</string>
+    <string name="booking">Booking</string>
+    <string name="e_shope">E-Shope</string>
+</resources>
