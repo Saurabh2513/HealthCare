@@ -44,7 +44,7 @@ class Registration : AppCompatActivity() {
                     Toast.makeText(this, "Password is not matching", Toast.LENGTH_SHORT).show()
                 }
             } else {
-                Toast.makeText(this, "Empty Fields are not allow !!", Toast.LENGTH_SHORT).show()
+                Toast.makeText(this, "Empty Fields are not allow ", Toast.LENGTH_SHORT).show()
             }
         }
         binding.signUp.setOnClickListener {
