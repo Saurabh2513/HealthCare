@@ -31,12 +31,6 @@ class MatchAdapter(val context: Context, val list: List<Match> ) :
         holder.binding.date.text = item.date
         holder.binding.venue.text = item.venue
         holder.binding.teams.text = item.teams.toString()
-//        var teamName = ""
-//        for (team in item.teams) {
-//            teamName += team + "  "
-//        }
-//        holder.binding.teams.text = teamName
-
     }
 
     override fun getItemCount(): Int {
