@@ -11,11 +11,8 @@ import com.example.healthcare.R
 
 
 class Account : Fragment() {
-
-
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
-
         (activity as AppCompatActivity).supportActionBar?.hide()
 
     }
