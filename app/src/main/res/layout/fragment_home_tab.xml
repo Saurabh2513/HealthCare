@@ -134,7 +134,7 @@
                         android:background="@drawable/silver_bg"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardCornerRadius="20dp"
+                        app:cardCornerRadius="10dp"
                         app:cardPreventCornerOverlap="true"
                         app:cardUseCompatPadding="true">
 
@@ -147,7 +147,6 @@
 
 
                         <ImageView
-
                             android:layout_width="match_parent"
                             android:layout_height="60dp"
                             android:paddingTop="10dp"
@@ -172,7 +171,7 @@
                         android:background="@drawable/silver_bg"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardCornerRadius="20dp"
+                        app:cardCornerRadius="10dp"
                         app:cardPreventCornerOverlap="true"
                         app:cardUseCompatPadding="true">
 
@@ -208,7 +207,7 @@
                         android:background="@drawable/silver_bg"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardCornerRadius="20dp"
+                        app:cardCornerRadius="10dp"
                         app:cardPreventCornerOverlap="true"
                         app:cardUseCompatPadding="true">
 
@@ -296,7 +295,7 @@
                         android:background="@drawable/silver_bg"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardCornerRadius="20dp"
+                        app:cardCornerRadius="10dp"
                         app:cardPreventCornerOverlap="true"
                         app:cardUseCompatPadding="true">
 
@@ -332,7 +331,7 @@
                         android:background="@drawable/silver_bg"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardCornerRadius="20dp"
+                        app:cardCornerRadius="10dp"
                         app:cardPreventCornerOverlap="true"
                         app:cardUseCompatPadding="true"
                         >
@@ -366,7 +365,7 @@
                         android:background="@drawable/silver_bg"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardCornerRadius="20dp"
+                        app:cardCornerRadius="10dp"
                         app:cardPreventCornerOverlap="true"
                         app:cardUseCompatPadding="true"
                         >
@@ -412,7 +411,7 @@
                         android:background="@drawable/silver_bg"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardCornerRadius="20dp"
+                        app:cardCornerRadius="10dp"
                         app:cardPreventCornerOverlap="true"
                         app:cardUseCompatPadding="true">
 
@@ -445,7 +444,7 @@
                         android:background="@drawable/silver_bg"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardCornerRadius="20dp"
+                        app:cardCornerRadius="10dp"
                         android:id="@+id/cold"
                         app:cardPreventCornerOverlap="true"
                         app:cardUseCompatPadding="true"
@@ -482,7 +481,7 @@
                         android:background="@drawable/silver_bg"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardCornerRadius="20dp"
+                        app:cardCornerRadius="10dp"
                         android:id="@+id/wellness"
                         app:cardPreventCornerOverlap="true"
                         app:cardUseCompatPadding="true">
@@ -530,7 +529,7 @@
                         android:clickable="true"
                         android:focusable="true"
                         android:id="@+id/familyCare"
-                        app:cardCornerRadius="20dp"
+                        app:cardCornerRadius="10dp"
                         app:cardPreventCornerOverlap="true"
                         app:cardUseCompatPadding="true">
 
@@ -566,7 +565,7 @@
                         android:background="@drawable/silver_bg"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardCornerRadius="20dp"
+                        app:cardCornerRadius="10dp"
                         app:cardPreventCornerOverlap="true"
                         app:cardUseCompatPadding="true"
                         >
@@ -602,7 +601,7 @@
                         android:background="@drawable/silver_bg"
                         android:clickable="true"
                         android:focusable="true"
-                        app:cardCornerRadius="20dp"
+                        app:cardCornerRadius="10dp"
                         android:id="@+id/contact"
                         app:cardPreventCornerOverlap="true"
                         app:cardUseCompatPadding="true"
