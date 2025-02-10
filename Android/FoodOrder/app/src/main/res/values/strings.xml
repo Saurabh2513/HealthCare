@@ -1,0 +1,6 @@
+<resources>
+    <string name="app_name">FoodOrder</string>
+    <string name="my_food_app">My Food App</string>
+    <string name="open">open</string>
+    <string name="close">close</string>
+</resources>

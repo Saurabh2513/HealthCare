@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="VcsDirectoryMappings">
+    <mapping directory="$PROJECT_DIR$/../" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ plant_app_ui" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/BrightLink_Task" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/HealthCare" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/IplScoreApi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/MoviesApi" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/NotesPro" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/NotesSQlite" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/QrScanner" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/RoomDataBase_task" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/ShoesStore" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/UserAPI2" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/WhiteBoard" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/XMLDesign" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/btncolor" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/calculator" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/calculator_mvvm" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/firstapp" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/responsive_layout_flutter" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/test02" vcs="Git" />
+    <mapping directory="$PROJECT_DIR$/to_do" vcs="Git" />
+  </component>
+</project>
